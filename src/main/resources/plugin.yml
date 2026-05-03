@@ -1,0 +1,30 @@
+name: EventBundler
+version: 1.0.0
+main: com.eventbundler.EventBundler
+api-version: 1.13
+author: DemoDev
+description: Comprehensive event system with 110 customizable events
+website: https://modrinth.com/plugin/event-bundler
+
+commands:
+  eventbundler:
+    description: Main EventBundler command
+    usage: /eventbundler <reload|list|info|toggle>
+    aliases: [eb, events]
+
+permissions:
+  eventbundler.admin:
+    description: Full access to EventBundler
+    default: op
+  eventbundler.reload:
+    description: Reload configuration
+    default: op
+  eventbundler.list:
+    description: List all events
+    default: op
+  eventbundler.toggle:
+    description: Toggle events on/off
+    default: op
+  eventbundler.api:
+    description: Access to developer API
+    default: true
